@@ -1,0 +1,18 @@
+#creates the vitural enviroment 
+python -m virtualenv .
+
+#Activating the vitural enviroment
+.\scripts\activate
+.\scripts\deactivate
+
+#install Django 
+pip install Django
+
+#begin Django project
+python C:\Users\PATHTOVITURALENV\Scripts\django-admin.py startproject <project_name> .
+
+#installing new models
+1) edit /app_name/settings.py and put new module under #My apps
+2) python manage.py makemigrations app_names -prepares the moduler we just made
+3) python manage.py migrate
+
